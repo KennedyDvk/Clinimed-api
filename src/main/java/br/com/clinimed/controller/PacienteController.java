@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("pacientes")
 public class PacienteController {
@@ -24,6 +26,16 @@ public class PacienteController {
         repository.save(new Paciente(dados));
         System.out.println(dados);
 
+    }
+
+//Cadastro de varios pacientes de uma vez para o ambiente de teste
+    @PostMapping("/cadastrar")
+    @Transactional
+    public void cadastrar(@Valid @RequestBody List<DadosCadastroPaciente> dadosList) {
+        for (DadosCadastroPaciente dados : dadosList) {
+            repository.save(new Paciente(dados));
+            System.out.println(dados);
+        }
     }
 
     @PutMapping
