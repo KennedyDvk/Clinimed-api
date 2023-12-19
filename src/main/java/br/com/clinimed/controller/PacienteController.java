@@ -1,7 +1,8 @@
 package br.com.clinimed.controller;
 
-import br.com.clinimed.medico.DadosAtualicaoMedico;
-import br.com.clinimed.paciente.*;
+import br.com.clinimed.domain.paciente.Paciente;
+import br.com.clinimed.domain.paciente.PacienteRpository;
+import br.com.clinimed.domain.paciente.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

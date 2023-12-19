@@ -1,4 +1,4 @@
-package br.com.clinimed.medico;
+package br.com.clinimed.domain.medico;
 
 public record DadosListagemMedico(Long id, String nome, String email, String crm, Especialidade especialidade) {
 

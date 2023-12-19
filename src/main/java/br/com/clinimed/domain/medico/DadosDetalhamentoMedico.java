@@ -1,6 +1,6 @@
-package br.com.clinimed.medico;
+package br.com.clinimed.domain.medico;
 
-import br.com.clinimed.endereco.Endereco;
+import br.com.clinimed.domain.endereco.Endereco;
 
 public record DadosDetalhamentoMedico(Long id, String nome, String email, String crm, String telefone, Especialidade especialidade, Endereco endereco) {
 

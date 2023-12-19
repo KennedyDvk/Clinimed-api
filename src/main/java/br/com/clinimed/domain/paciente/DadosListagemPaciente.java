@@ -1,6 +1,4 @@
-package br.com.clinimed.paciente;
-
-import br.com.clinimed.medico.DadosListagemMedico;
+package br.com.clinimed.domain.paciente;
 
 public record DadosListagemPaciente(Long id, String nome, String cpf, String email, String telefone) {
 
