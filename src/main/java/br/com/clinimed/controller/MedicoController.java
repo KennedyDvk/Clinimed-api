@@ -33,7 +33,7 @@ public class MedicoController {
     @Transactional
     public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroMedico dados, UriComponentsBuilder uriBuilder) {
 
-        // Cria uma nova instância de Medico a partir dos dados fornecidos.
+        // Cria uma nova instância de Médico a partir dos dados fornecidos.
         var medico = new Medico(dados);
 
         // Salva o novo médico no banco de dados.
