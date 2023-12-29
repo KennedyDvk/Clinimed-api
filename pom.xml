@@ -12,7 +12,7 @@
 	<artifactId>clinimed</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Clinimed</name>
-	<description>Api Rest para um aplicação web de medicos e pacientes</description>
+	<description>Api Rest. Para uma aplicação ‘web’ de médicos e pacientes</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -93,6 +93,12 @@
 			<groupId>com.auth0</groupId>
 			<artifactId>java-jwt</artifactId>
 			<version>4.4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
 		</dependency>
 
 	</dependencies>
